@@ -22,6 +22,23 @@ document.addEventListener("click",()=>{
             musicbtn.textContent="Turn ON The Music";
         }
     });
+const fullbtn=document.getElementById("fullbtn")
+fullbtn.addEventListener("click", () => {
+
+    if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen();
+    } else {
+        document.exitFullscreen();
+    }
+
+});
+document.addEventListener("fullscreenchange",()=>{
+    if(document.fullscreenElement){
+        fullbtn.textContent="Exit Fullscreen"
+    }else{
+        fullbtn.textContent="Fullscreen"
+    }
+});
 const BASE_URL="https://www.themealdb.com/api/json/v1/1/";
 const SEARCH_URL=`${BASE_URL}search.php?s=`;
 const LOOKUP_URL=`${BASE_URL}lookup.php?i=`;

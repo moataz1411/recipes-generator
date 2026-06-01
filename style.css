@@ -255,7 +255,7 @@ font-weight:600;
 }
 .musicbtn{
     position: fixed;
-    bottom:20px;
+    top:20px;
     padding:12px 20px;
     cursor:pointer;
     border: none;
@@ -268,4 +268,20 @@ font-weight:600;
 }
 .musicbtn:hover{
     transform: translateY(-2px);
+}
+.fullscreenbtn{
+    position:fixed;
+    top:80px;
+    right: 20px;
+    padding: 12px 20px;
+    border:none;
+    border-radius: 999px;
+    background: linear-gradient(45deg,#4f46e5,#7c3aed);
+    color: white;
+    font-size: 600;
+    cursor:pointer;
+    transition: 0.3s;
+}
+.fullscreenbtn:hover{
+transform: translateY(-2px);
 }
