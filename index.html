@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recipes Generator</title>
+        <link rel="stylesheet" href="style.css">
+        <link
+        rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"/>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+               <h1><i class="fa-solid fa-utensils"></i> Recipes Generator</h1>
+               <p>Find the most delicious recipes from around the world!</p>
+            </header>
+            <p class="apilink">Powered by <a href="https://www.themealdb.com/api.php">TheMealDB API</a></p>
+            <div class="searchcontainer">
+                <input type="text" id="searchinput" placeholder="Search for meals or keywords ...">
+                <button id="searchbutton"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div id="erroralert" class="hidden">
+                    <p><i class="fa-solid fa-triangle-exclamation"></i> No meals found. Please try again.</p>
+                    </div>
+                    <div id="resultheading"></div>
+                    <div id="mealscontainer"></div>
+                    <div id="mealdetails" class="hidden">
+                        <button id="backbutton"><i class="fa-solid fa-arrow-left"></i> Back to Recipes</button>
+                    <div class="mealscontent"></div>   
+                    </div>
+        </div>    
+        <script src="script.js"></script>
