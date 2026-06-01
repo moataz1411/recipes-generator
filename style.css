@@ -4,7 +4,7 @@
     box-sizing:border-box;
 }
 :root{
-    --primary:#ff6b35;
+    --primary:#ff5a3c;
     --primary-dark:#e85a2a;
     --primary-light:#ffe0d6;
     --secondry:#f7931e;
@@ -41,7 +41,7 @@ h1{
     font-weight:700;
 }
 h1 i{
-    margin-right:10
+    margin-right:10px;
 }
 header p{
     color:var(--text-dark);
@@ -86,7 +86,7 @@ button:hover{
     font-size:20px;
     color:var(--primary);
 }
-.mealscontainer{
+#mealscontainer{
     display:grid;
     grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
     gap:25px;
@@ -144,7 +144,7 @@ button:hover{
     background-color:var(--primary);
     color:white;
 }
-.mealcontent{
+.mealscontent{
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -228,7 +228,7 @@ font-weight:600;
     opacity:0.7;
     font-size:14px;
 }
-apilink a{
+.apilink a{
     color:var(--primary);
     text-decoration:none;
 }
@@ -243,13 +243,29 @@ apilink a{
         width:100%;
         padding:10px;
     }
-    .mealcontainer{
+    #mealscontainer{
         grid-template-columns:1fr;
     }
     .mealdetails-img{
         max-width: 100px;
     }
-    .ingerdients-list{
+    .ingredients-list{
         grid-template-columns:1fr;
     } 
+}
+.musicbtn{
+    position: fixed;
+    bottom:20px;
+    padding:12px 20px;
+    cursor:pointer;
+    border: none;
+    border-radius: 999px;
+    right:20px;
+    background:linear-gradient(45deg,var(--primary),var(--primary-dark));
+    color: white;
+    font-weight: 600;;
+    transition: 0.3s ease;
+}
+.musicbtn:hover{
+    transform: translateY(-2px);
 }
